@@ -1,0 +1,55 @@
+// Place your key bindings in this file to override the defaults
+// emacs cursor and sellect all:ctrl+alt+a
+
+
+[{
+    "key":"ctrl+n",
+    "command":"cursorDown",
+    "when":"editorTextFocus"
+},
+{
+    "key":"ctrl+p",
+    "command":"cursorUp",
+    "when":"editorTextFocus"
+},
+{
+    "key":"ctrl+f",
+    "command":"cursorRight",
+    "when":"editorTextFocus"
+},
+{
+    "key":"ctrl+b",
+    "command":"cursorLeft",
+    "when":"editorTextFocus"
+},
+{
+    "key":"ctrl+a",
+    "command":"cursorHome",
+    "when":"editorTextFocus"
+},
+{
+    "key":"ctrl+e",
+    "command":"cursorEnd",
+    "when":"editorTextFocus"
+},
+{
+    "key":"ctrl+d",
+    "command":"deleteRight",
+    "when":"editorTextFocus"
+},
+{
+    "key":"ctrl+h",
+    "command":"deleteLeft",
+    "when":"editorTextFocus"
+},
+{
+    "key": "ctrl+alt+a",
+    "command": "editor.action.selectAll",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+a",
+    "command": "-editor.action.selectAll",
+    "when": "textInputFocus"
+},
+]
