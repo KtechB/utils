@@ -1,0 +1,11 @@
+{ "files.exclude": {
+    "**/*.gz":true,
+    "**/*.log":true,
+    "**/*.aux":true,
+    "**/*.sty":true,
+    "*.pdf":true,
+    "*.blg":true,
+},
+"workbench.colorTheme": "Solarized Light",
+"editor.lineHeight": 22,
+}
