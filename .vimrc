@@ -8,4 +8,4 @@ set nocompatible
   
 inoremap <silent> jj <ESC>
 set background=dark
-colorscheme hybrid
+colorscheme pablo
