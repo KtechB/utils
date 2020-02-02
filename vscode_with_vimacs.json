@@ -1,0 +1,87 @@
+{
+    "window.zoomLevel": 0,
+    "git.autofetch": true,
+    "terminal.integrated.inheritEnv": false,
+    "python.pythonPath": "/Users/rist019/miniconda3/envs/ml/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    // for vim 
+    // システムのclipboardにコピー
+    "vim.useSystemClipboard":true,
+
+    // 検索に:を入れる
+    "vim.cmdLineInitialColon": true,
+
+    "vim.hlsearch": true,
+
+    // 言わずもがなeasymotion
+    "vim.easymotion": true,
+
+    // カーソル上にあるワードを"*"で検索
+    "vim.visualstar": true,
+
+    // 諸々のctrlキーを使った操作が有効になる
+    "vim.useCtrlKeys": true,
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "j"],
+          "after": ["<Esc>"]
+        }
+      ],
+      // for change : to ;
+      "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": [
+            ";"
+          ],
+          "after": [
+            ":"
+          ]
+        },
+        {
+          "before": [
+            ":"
+          ],
+          "after": [
+            ";"
+          ]
+        },
+        {
+          "before": ["<leader>", "d"],
+          "after": ["d", "d"]
+        },
+        {
+          "before": ["<C-n>"],
+          "commands": [":nohl"]
+        }
+      ],
+      "vim.visualModeKeyBindingsNonRecursive": [
+        {
+          "before": [
+            ";"
+          ],
+          "after": [
+            ":"
+          ]
+        },
+        {
+          "before": [
+            ":"
+          ],
+          "after": [
+            ";"
+          ]
+        }
+        ],
+      // set space ac leader
+      "vim.leader": "<space>",
+      "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+      },
+      "workbench.colorCustomizations": {
+        "statusBar.background": "#5f0000",
+        "statusBar.noFolderBackground": "#5f0000",
+        "statusBar.debuggingBackground": "#5f0000"
+      },
+    }
