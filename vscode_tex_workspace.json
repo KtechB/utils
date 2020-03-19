@@ -8,4 +8,32 @@
 },
 "workbench.colorTheme": "Solarized Light",
 "editor.lineHeight": 22,
+ //tex
+"[tex]":{
+    "editor.fontFamily": "Cambria, 游明朝",
+    "editor.letterSpacing": 0.0, // 文字の間隔を広げる
+    "editor.lineHeight": 24,
+    "editor.fontSize": 14,
+
+},
+"latex-workshop.latex.recipes": [
+    {
+        "name": "make_ptex2pdf",
+        "tools": [
+            "ptex2pdf",
+        ]
+    }
+],
+"latex-workshop.latex.tools": [
+    {
+        "name": "ptex2pdf",
+        "command": "ptex2pdf",
+        "args": [
+            "-l",
+            "-ot",
+            "-kanji=utf8 -synctex=1",
+            "%DOC%"
+        ]
+    }
+],
 }
