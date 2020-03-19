@@ -5,6 +5,20 @@
     "python.pythonPath": "/Users/rist019/miniconda3/envs/ml/bin/python",
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
+    
+    // editor graphic
+    "editor.fontFamily": "Consolas, 'Source Han Code JP N', 'Courier New', monospace",
+    "editor.roundedSelection": true, // 選択範囲の角を丸める
+    //markdown
+    "[markdown]":{
+        "editor.fontFamily": "Cambria, 游明朝",
+        "editor.letterSpacing": 0.0, // 文字の間隔を広げる
+        "editor.lineHeight": 24,
+        "editor.fontSize": 14,
+
+    },
+    
+    
     // for vim 
     // システムのclipboardにコピー
     "vim.useSystemClipboard":true,
