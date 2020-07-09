@@ -93,9 +93,14 @@
         "<C-a>": false,
         "<C-f>": false
       },
-      "workbench.colorCustomizations": {
-        "statusBar.background": "#5f0000",
-        "statusBar.noFolderBackground": "#5f0000",
-        "statusBar.debuggingBackground": "#5f0000"
-      },
+      "vim.cursorStylePerMode.normal" : "block",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.replace": "block-outline",
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": "#8b0808",
+    "vim.statusBarColors.insert": "#ef7f7f",
+    "vim.statusBarColors.visual": "#89ccdd",
+    "vim.statusBarColors.visualline": "#b2864a",
+    "vim.statusBarColors.visualblock": "#b2844a",
+    "vim.statusBarColors.replace": "#a5382c",
     }
