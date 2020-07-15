@@ -1,106 +1,146 @@
 {
-    "window.zoomLevel": 0,
-    "git.autofetch": true,
-    "terminal.integrated.inheritEnv": false,
-    "python.pythonPath": "/Users/rist019/miniconda3/envs/ml/bin/python",
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    
-    // editor graphic
-    "editor.fontFamily": "Consolas, 'Source Han Code JP N', 'Courier New', monospace",
-    "editor.roundedSelection": true, // 選択範囲の角を丸める
-    //markdown
-    "[markdown]":{
-        "editor.fontFamily": "Cambria, 游明朝",
-        "editor.letterSpacing": 0.0, // 文字の間隔を広げる
-        "editor.lineHeight": 24,
-        "editor.fontSize": 14,
-
+   // editor graphic
+  "editor.fontFamily": "‘Cascadia Code’,  Consolas, `Source Han Code JP N`, `Courier New`, monospace",
+  "editor.roundedSelection": true, // 選択範囲の角を丸める
+  "editor.minimap.enabled": false,
+  //markdown
+  "[markdown]": {
+    "editor.fontFamily": "Cambria, 游明朝",
+    "editor.letterSpacing": 0.0, // 文字の間隔を広げる
+    "editor.lineHeight": 24,
+    "editor.fontSize": 14,
+  },
+  "git.autofetch": true,
+  // for vim 
+  // システムのclipboardにコピー
+  "vim.useSystemClipboard": true,
+  // 検索に:を入れる
+  "vim.cmdLineInitialColon": true,
+  "vim.hlsearch": true,
+  // 言わずもがなeasymotion
+  "vim.easymotion": true,
+  // カーソル上にあるワードを"*"で検索
+  "vim.visualstar": true,
+  // 諸々のctrlキーを使った操作が有効になる
+  "vim.useCtrlKeys": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  // for change : to ;
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        ":"
+      ]
     },
-    
-    
-    // for vim 
-    // システムのclipboardにコピー
-    "vim.useSystemClipboard":true,
-
-    // 検索に:を入れる
-    "vim.cmdLineInitialColon": true,
-
-    "vim.hlsearch": true,
-
-    // 言わずもがなeasymotion
-    "vim.easymotion": true,
-
-    // カーソル上にあるワードを"*"で検索
-    "vim.visualstar": true,
-
-    // 諸々のctrlキーを使った操作が有効になる
-    "vim.useCtrlKeys": true,
-    "vim.insertModeKeyBindings": [
-        {
-          "before": ["j", "j"],
-          "after": ["<Esc>"]
-        }
+    {
+      "before": [
+        ":"
       ],
-      // for change : to ;
-      "vim.normalModeKeyBindingsNonRecursive": [
-        {
-          "before": [
-            ";"
-          ],
-          "after": [
-            ":"
-          ]
-        },
-        {
-          "before": [
-            ":"
-          ],
-          "after": [
-            ";"
-          ]
-        },
-        {
-          "before": ["<leader>", "d"],
-          "after": ["d", "d"]
-        },
-        {
-          "before": ["<C-n>"],
-          "commands": [":nohl"]
-        }
+      "after": [
+        ";"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
       ],
-      "vim.visualModeKeyBindingsNonRecursive": [
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    }
+  ],
+  // set space ac leader
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    // "<C-a>": false,
+    // "<C-f>": false
+  },
+  // fix undo redo as vscode
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "u"
+      ],
+      "after": [],
+      "commands": [
         {
-          "before": [
-            ";"
-          ],
-          "after": [
-            ":"
-          ]
-        },
-        {
-          "before": [
-            ":"
-          ],
-          "after": [
-            ";"
-          ]
+          "command": "undo"
         }
-        ],
-      // set space ac leader
-      "vim.leader": "<space>",
-      "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
-      },
-      "vim.cursorStylePerMode.normal" : "block",
-    "vim.cursorStylePerMode.insert": "line",
-    "vim.cursorStylePerMode.replace": "block-outline",
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": "#8b0808",
-    "vim.statusBarColors.insert": "#ef7f7f",
-    "vim.statusBarColors.visual": "#89ccdd",
-    "vim.statusBarColors.visualline": "#b2864a",
-    "vim.statusBarColors.visualblock": "#b2844a",
-    "vim.statusBarColors.replace": "#a5382c",
+      ]
+    },
+    {
+      "before": [
+        "<C-r>"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    }
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8b0808",
+    "statusBar.noFolderBackground": "#8b0808",
+    "statusBar.debuggingBackground": "#8b0808"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "remote.SSH.remotePlatform": {
+    "HydroZ370": "linux"
+  },
+  //vimacs encouraged setting
+  //"vim.useCtrlKeys": false,
+  "vim.overrideCopy": false,
+  "vim.hlsearch": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": true,
+    "<C-b>": true,
+    "<C-u>": true,
+    "<C-r>": true,
+    "<C-v>": false, // 矩形visual
+    "<C-[>": true,
+    "<C-w>": true, // windowcommand
+  },
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.replace": "block-outline",
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": "#8b0808",
+  "vim.statusBarColors.insert": "#ef7f7f",
+  "vim.statusBarColors.visual": "#89ccdd",
+  "vim.statusBarColors.visualline": "#b2864a",
+  "vim.statusBarColors.visualblock": "#b2844a",
+  "vim.statusBarColors.replace": "#a5382c",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineNumbers": "relative",
+  "window.zoomLevel": 0,
     }
