@@ -1,0 +1,15 @@
+Host Pro5000mk2
+	HostName 10.249.250.229
+	User hirobuchi.ryota
+	Port 22
+	LocalForward 8888 localhost:8888
+Host Pro5000
+	HostName 10.249.250.230
+	User hirobuchi.ryota
+	Port 22
+	LocalForward 8888 localhost:8888
+Host HydroZ370
+	HostName 10.249.250.231
+	User hirobuchi.ryota
+	Port 22
+	LocalForward 8888 localhost:8888
