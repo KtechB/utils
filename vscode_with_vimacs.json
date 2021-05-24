@@ -143,4 +143,7 @@
   },
   "editor.lineNumbers": "relative",
   "window.zoomLevel": 0,
+   "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false
     }
