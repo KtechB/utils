@@ -1,11 +1,16 @@
 {
-   // editor graphic
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.fontFamily": "Consolas,Meiryo, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 14,
+  //general
+  "window.restoreWindows": "none",
+  // editor graphic
   "editor.fontFamily": "‘Cascadia Code’,  Consolas, `Source Han Code JP N`, `Courier New`, monospace",
   "editor.roundedSelection": true, // 選択範囲の角を丸める
   "editor.minimap.enabled": false,
   //markdown
   "[markdown]": {
-    "editor.fontFamily": "Cambria, 游明朝",
+    "editor.fontFamily": "Cambria, ヒラギノ明朝",
     "editor.letterSpacing": 0.0, // 文字の間隔を広げる
     "editor.lineHeight": 24,
     "editor.fontSize": 14,
@@ -73,10 +78,6 @@
   ],
   // set space ac leader
   "vim.leader": "<space>",
-  "vim.handleKeys": {
-    // "<C-a>": false,
-    // "<C-f>": false
-  },
   // fix undo redo as vscode
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -103,23 +104,26 @@
     }
   ],
   "workbench.colorCustomizations": {
-    "statusBar.background": "#8b0808",
-    "statusBar.noFolderBackground": "#8b0808",
-    "statusBar.debuggingBackground": "#8b0808"
+    "statusBar.background": "#89ccdd",
+    "statusBar.noFolderBackground": "#89ccdd",
+    "statusBar.debuggingBackground": "#89ccdd"
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
   "remote.SSH.remotePlatform": {
-    "HydroZ370": "linux"
+    "HydroZ370": "linux",
+    "Pro5000mk2": "linux"
   },
   //vimacs encouraged setting
   //"vim.useCtrlKeys": false,
-  "vim.overrideCopy": false,
+  "vim.overrideCopy": true,
   "vim.hlsearch": true,
   "vim.handleKeys": {
     "<C-a>": false,
+    "<C-d>": true,
+    "<C-e>": false,
     "<C-f>": true,
     "<C-b>": true,
     "<C-u>": true,
@@ -142,8 +146,52 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.lineNumbers": "relative",
-  "window.zoomLevel": 0,
-   "python.formatting.provider": "black",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": false
+  "update.mode": "manual",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "pasteImage.namePrefix": "${currentFileNameWithoutExt}_", // デフォルトのファイル名の頭にmarkdown名をつける
+  "pasteImage.path": "${currentFileDir}/img", //(markdownファイルのディレクトリ内)/img内に画像を保存
+  "pasteImage.showFilePathConfirmInputBox": true, // ペースト時にファイル名を変更する
+  "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+  "pasteImage.prefix": "./",
+  "editor.fontSize": 14,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    },
+    {
+      "viewType": "jupyter-notebook",
+      "filenamePattern": "*.ipynb"
     }
+  ],
+  "python.showStartPage": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "java.home": "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "workbench.colorTheme": "Visual Studio 2019 Dark",
+  "editor.tabSize": 8,
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  // unity
+    "omnisharp.useGlobalMono": "always",
+    "omnisharp.monoPath": "/Library/Frameworks/Mono.framework/Versions/Current/Commands",
+    "redhat.telemetry.enabled": false
+
+    //
+    
+}
